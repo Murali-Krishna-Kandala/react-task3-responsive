@@ -1,38 +1,305 @@
-.App {
+.container {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+header {
+  background-color: #999;
+}
+.header {
+  margin: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.Logo {
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
   text-align: center;
+  padding: 0px 30px;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.square-links {
+  display: flex;
+}
+.sqlink {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sl1,
+.sl3 {
+  background-color: #555;
+}
+.sl2,
+.sl4 {
+  background-color: #666;
+}
+.sl4 {
+  margin-right: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.intro-content {
+  background-color: #666;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.location-logo-img {
+  margin-top: 100px;
+  height: auto;
+  width: 100px;
+}
+
+.intro-head {
+  background-color: #aaa;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  width: 40%;
+  height: auto;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.button {
+  margin: 30px 0px;
+  background-color: #aaa;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  width: 20%;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.content-1 {
+  margin: 30px 80px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Wwd {
+  background-color: #aaa;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  vertical-align: center;
+  line-height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Wht-We-do {
+  margin-right: 20px;
+}
+.content {
+  margin-left: 20px;
+}
+
+.icons {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  text-align: center;
+  background-color: #777;
+  color: #fff;
+  font-size: 40px;
+}
+
+.i3 {
+  margin-top: 30px;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+}
+
+.i2,
+.i4 {
+  height: 150px;
+  width: 150px;
+  margin: 100px 0;
+  line-height: 150px;
+}
+
+.i1,
+.i5 {
+  height: 100px;
+  width: 100px;
+  margin-top: 200px;
+  line-height: 100px;
+}
+
+.form-request {
+  margin-top: 200px;
+  margin-bottom: 30px;
+  background-color: #777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form-title {
+  font-size: 50px;
+  color: #fff;
+  margin-left: 100px;
+}
+
+.empty-form {
+  background-color: #aaa;
+  padding: 10px 0;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.em-fo {
+  background-color: #555;
+  width: 300px;
+  height: 100px;
+  margin: 10px 20px;
+}
+.em-fo1,
+.em-fo2,
+.em-fo3 {
+  height: 30px;
+}
+
+.latest {
+  margin: 50px 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+.Lts {
+  background-color: #777;
+  height: 300px;
+  width: 49%;
+  vertical-align: middle;
+  line-height: 300px;
+}
+.Lt1 {
+  margin-right: 20px;
+}
+.Lt2 {
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #777;
+  font-size: 25px;
+  height: 80px;
+  color: #fff;
+}
+
+.footer {
+  margin-left: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    /* Optional */
+    margin: 0 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .header {
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: auto;
+  }
+
+  .Logo {
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .square-links {
+    margin: 0;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .intro-content {
+    margin-bottom: 20px;
+  }
+
+  .intro-head,
+  .button {
+    width: 100%;
+    height: auto;
+  }
+  .content-1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Wwd {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .icons {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .icon {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    margin: 0;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 100%;
+  }
+
+  .form-request {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-title {
+    margin: 0;
+  }
+
+  .empty-form {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+  .latest {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .Lts {
+    width: 100%;
+    margin: 0;
+  }
+  .Lt1 {
+    margin-bottom: 40px;
+  }
+  footer {
+    margin-top: 30px;
   }
 }
